@@ -1,0 +1,8 @@
+*.project
+*.prefs
+*.MF
+*.properties
+*.xml
+*.class
+*.jar
+*.lst
