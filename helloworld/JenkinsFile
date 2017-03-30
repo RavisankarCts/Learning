@@ -24,5 +24,24 @@ pipeline {
                 }
             }
         }
+        
+        stage ('test') {
+            steps {
+                bat 'echo hello' 
+            }
+        }
+        
+        stage ('build docker image') {
+            steps {
+                bat 'echo building docker image' 
+            }
+        }
+        
+        stage ('upload docker image to docker registry') {
+            steps {
+                bat 'echo building docker image' 
+            }
+        }
+        
     }
 }
