@@ -25,6 +25,12 @@ pipeline {
             }
         }
         
+        stage ('StaticCheck') {
+            steps {
+                bat 'mvn -f helloworld/pom.xml sonar:sonar' 
+            }
+        }
+        
         stage ('Test') {
             steps {
                 bat 'echo hello' 
